@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>AirBrand</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.js?ver=6.4.3" id="jquery-js"></script>
 </head>
 <body>
-<header class="header">
+<header class="header header_desc">
     <div class="container">
+        <a href="#" class="header_logo">
+            <img src="images/logo_white_2x.png" alt="logo">
+            <img src="images/header_bg_logo_2x.png" alt="background" class="header_logo_bg">
+        </a>
+        <nav>
+            <ul class="header_menu">
+                <li class="header_menu-item active"><a href="#">О нас</a></li>
+                <li class="header_menu-item"><a href="#">Instagram</a></li>
+                <li class="header_menu-item"><a href="#">Таргет</a></li>
+                <li class="header_menu-item"><a href="#">Сайты</a></li>
+                <li class="header_menu-item"><a href="#">Ивенты</a></li>
+            </ul>
+        </nav>
+        <button class="header_action">
+            <span>Заказать</span>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C23.2844 0 30 6.71562 30 15C30 23.2844 23.2844 30 15 30C6.71562 30 0 23.2844 0 15C0 6.71562 6.71562 0 15 0ZM20.1744 21.1144C20.45 20.2681 21.7431 11.8313 21.9025 10.1688C21.9506 9.665 21.7919 9.33063 21.48 9.18125C21.1031 9 20.545 9.09063 19.8969 9.32438C19.0087 9.64438 7.65312 14.4662 6.99687 14.745C6.375 15.0094 5.78625 15.2975 5.78625 15.715C5.78625 16.0088 5.96063 16.1737 6.44063 16.345C6.94 16.5231 8.19812 16.9044 8.94125 17.1094C9.65687 17.3069 10.4712 17.1356 10.9275 16.8519C11.4112 16.5513 16.9963 12.8144 17.3969 12.4869C17.7975 12.1594 18.1169 12.5788 17.7894 12.9069C17.4619 13.2344 13.6288 16.955 13.1231 17.47C12.5094 18.0956 12.945 18.7437 13.3569 19.0031C13.8269 19.2994 17.2087 21.5675 17.7181 21.9312C18.2275 22.295 18.7438 22.46 19.2169 22.46C19.69 22.46 19.9387 21.8375 20.1744 21.1144Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</header>
+<header class="header-mob">
+    <div class="header__container">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo-main" src="images/header_logo_mob_2x.png" width='69px' alt="header-logo">
+            <img class="header__logo-active" src="images/header_logo_mob_hover_2x.png" width='69px' alt="header-logo">
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__icon-block">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
 
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a class="menu__link active" href="index.html">О нас</a></li>
+                    <li><a class="menu__link" href="#">Instagram</a></li>
+                    <li><a class="menu__link" href="#">Таргет</a></li>
+                    <li><a class="menu__link" href="#">Сайты</a></li>
+                    <li><a class="menu__link" href="#">Ивенты</a></li>
+                    <li><a class="menu__link" href="#">Контакты</a></li>
+                </ul>
+                <button class="header_action_mob">
+                    <img class="header_action_mob-bg" src="images/menu_mob_bg.png" alt="AirBrand">
+                    <span>Заказать</span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 0C23.2844 0 30 6.71562 30 15C30 23.2844 23.2844 30 15 30C6.71562 30 0 23.2844 0 15C0 6.71562 6.71562 0 15 0ZM20.1744 21.1144C20.45 20.2681 21.7431 11.8313 21.9025 10.1688C21.9506 9.665 21.7919 9.33063 21.48 9.18125C21.1031 9 20.545 9.09063 19.8969 9.32438C19.0087 9.64438 7.65312 14.4662 6.99687 14.745C6.375 15.0094 5.78625 15.2975 5.78625 15.715C5.78625 16.0088 5.96063 16.1737 6.44063 16.345C6.94 16.5231 8.19812 16.9044 8.94125 17.1094C9.65687 17.3069 10.4712 17.1356 10.9275 16.8519C11.4112 16.5513 16.9963 12.8144 17.3969 12.4869C17.7975 12.1594 18.1169 12.5788 17.7894 12.9069C17.4619 13.2344 13.6288 16.955 13.1231 17.47C12.5094 18.0956 12.945 18.7437 13.3569 19.0031C13.8269 19.2994 17.2087 21.5675 17.7181 21.9312C18.2275 22.295 18.7438 22.46 19.2169 22.46C19.69 22.46 19.9387 21.8375 20.1744 21.1144Z" fill="white"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
     </div>
 </header>
 
+<script src="scripts/index.js"></script>
 </body>
 </html>
