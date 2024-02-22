@@ -170,6 +170,16 @@ a {
         width: 13px;
         left: 10px;
     }
+    .header__logo {
+        position: relative;
+    }
+    .header_logo_mob_bg {
+        position: absolute;
+        max-width: 183px;
+        left: -11px;
+        top: -2px;
+        z-index: -1;
+    }
     .header__logo-active {
         display: none;
     }
@@ -178,6 +188,9 @@ a {
     }
     body._lock .header__logo-active {
         display: block;
+    }
+    body._lock .header_logo_mob_bg {
+        display: none;
     }
     .menu__body {
         position: fixed;
@@ -217,8 +230,8 @@ a {
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
-        gap: 52px;
-        padding: 10px 10px 10px 29px;
+        gap: 38px;
+        padding: 11px 8px 11px 22px;
         transition: 0.4s;
         border: none;
         background-color: white;
@@ -228,9 +241,9 @@ a {
     }
     .header_action_mob span{
         font-weight: 300;
-        font-size: 20px;
-        line-height: 200%;
-        letter-spacing: 0.05em;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
         color: #fff;
     }
     .header_action_mob-bg {
