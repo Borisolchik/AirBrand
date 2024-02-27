@@ -56,12 +56,17 @@ $(document).ready(function() {
 });
 $(function() {
     let header = $('.header_scroll');
+    let header_mob = $('.header_scroll-mob');
+    // let header_mob_hide = $('.header-mob.hide');
 
     $(window).scroll(function() {
         if($(this).scrollTop() > 15) {
             header.addClass('header_fixed');
+            // header_mob.addClass('header_fixed');
+            // header_mob_hide.addClass('hide-block');
         } else {
             header.removeClass('header_fixed');
+            header_mob.removeClass('header_fixed');
         }
     });
 });
