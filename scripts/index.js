@@ -56,13 +56,13 @@ $(document).ready(function() {
 });
 $(function() {
     let header = $('.header_scroll');
-    let header_mob = $('.header_scroll-mob');
+    let header_mob = $('.header-mob');
     // let header_mob_hide = $('.header-mob.hide');
 
     $(window).scroll(function() {
         if($(this).scrollTop() > 15) {
             header.addClass('header_fixed');
-            // header_mob.addClass('header_fixed');
+            header_mob.addClass('header_fixed');
             // header_mob_hide.addClass('hide-block');
         } else {
             header.removeClass('header_fixed');
@@ -70,3 +70,23 @@ $(function() {
         }
     });
 });
+
+let array1 = document.querySelectorAll('.cases_item-block');
+for (let i = 3; i < array1.length; i++) {
+    array1[i].classList.add('none');
+}
+const button1 = document.querySelector('#cases_btn');
+const button2 = document.querySelector('#cases_action-hide');
+const button3 = document.querySelector('#cases_action-show');
+if (button1) {
+    button1.addEventListener('click', () => {
+        let elements1 = document.querySelectorAll('.cases_item-block.none');
+
+        for (let i = 0; i < elements1.length; i++) {
+            elements1[i].classList.remove('none');
+        }
+        button1.classList.add('none');
+        button2.classList.add('none');
+        button3.classList.remove('none');
+    });
+}
