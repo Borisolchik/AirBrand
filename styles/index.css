@@ -737,8 +737,27 @@ a {
     height: 585px;
 }
 
-
-
+.companies .container {
+    padding: 0 60px 120px;
+}
+.companies_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.companies_items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 80px;
+}
+.companies_item img {
+    max-width: 153px;
+}
 
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
@@ -752,6 +771,31 @@ a {
     }
     .advantages_item-text {
         height: 180px;
+    }
+
+    .companies_items {
+        gap: 20px 31px;
+    }
+}
+/* 1200px - 1439px */
+@media screen and (max-width: 1380px) {
+    .review {
+        min-width: auto;
+    }
+    .review_info {
+        height: auto;
+    }
+    .reviews .slick-list {
+        height: auto;
+    }
+    .reviews .arrow-next {
+        bottom: -52px;
+    }
+    .reviews .slick-dots {
+        bottom: -30px;
+    }
+    .reviews_item.slick-center {
+        margin-top: 0;
     }
 }
 /* 1024px - 1199px */
@@ -795,21 +839,21 @@ a {
         margin-left: 100px;
     }
 
-    .review {
-        min-width: auto;
-    }
-    .review_info {
-        height: auto;
-    }
-    .reviews .slick-list {
-        height: auto;
-    }
-    .reviews .arrow-next {
-        bottom: -52px;
-    }
-    .reviews .slick-dots {
-        bottom: -30px;
-    }
+    /*.review {*/
+    /*    min-width: auto;*/
+    /*}*/
+    /*.review_info {*/
+    /*    height: auto;*/
+    /*}*/
+    /*.reviews .slick-list {*/
+    /*    height: auto;*/
+    /*}*/
+    /*.reviews .arrow-next {*/
+    /*    bottom: -52px;*/
+    /*}*/
+    /*.reviews .slick-dots {*/
+    /*    bottom: -30px;*/
+    /*}*/
 }
 /* 901px - 1023px */
 @media screen and (max-width: 1023px) {
@@ -1081,6 +1125,17 @@ a {
     }
     .reviews .slick-dots {
         right: 152px;
+    }
+
+
+    .companies .container {
+        padding: 0 20px 100px;
+    }
+    .companies_item img {
+        max-width: 110px;
+    }
+    .companies_items {
+        justify-content: center;
     }
 
 }
@@ -1424,4 +1479,16 @@ a {
         padding: 0 20px 120px;
     }
 
+    .companies_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .companies_items {
+        gap: 20px;
+    }
+    .companies_item img {
+        max-width: 93px;
+    }
 }
