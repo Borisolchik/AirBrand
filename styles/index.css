@@ -583,6 +583,163 @@ a {
     width: 800px;
 }
 
+.servicesAll .container {
+    padding: 0 60px 120px;
+    position: relative;
+}
+.servicesAll_bg {
+    position: absolute;
+    right: 0;
+    top: -173px;
+    max-width: 634px;
+}
+.servicesAll_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 60px;
+}
+.servicesAll_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: end;
+}
+.servicesAll_item {
+    width: calc(50% - 10px);
+    border: 1px solid rgba(22, 20, 20, 0.2);
+    border-radius: 20px;
+    padding: 10px 12px 10px 13px;
+    box-sizing: border-box;
+}
+.servicesAll_item-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicesAll_item-name {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #161414;
+}
+.servicesAll_item-price {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #161414;
+}
+.servicesAll_item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: #161414;
+}
+.servicesAll_item-text span {
+    font-weight: 500;
+}
+
+.reviews .container {
+    padding: 0 80px 120px;
+}
+.reviews_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.reviews_items {
+    margin: 0 -20px;
+    position: relative;
+}
+.review {
+    padding: 0 20px;
+    min-width: 400px;
+}
+.review_info {
+    border: 2px solid #ffbe98;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    height: 440px;
+    padding: 20px 40px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: transparent;
+    margin-top: 0;
+}
+.reviews_item {
+    transition: margin-top 1.2s ease;
+}
+.reviews_item.slick-center {
+    margin-top: 60px;
+}
+.reviews_item.slick-center .review_info{
+    background: #ffbe98;
+}
+.review_name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #161414;
+}
+.review_name-profession {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: rgba(22, 20, 20, 0.6);
+    max-width: 400px;
+}
+.reviews .arrow-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.reviews .slick-dots {
+    position: absolute;
+    right: 132px;
+    bottom: 20px;
+    width: fit-content;
+}
+.reviews .slick-dots li.slick-active button:before {
+    font-size: 10px;
+}
+.reviews .slick-dots li button:before {
+    line-height: 10px;
+}
+.reviews .slick-dots li {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 10px;
+}
+.reviews .slick-dots li button {
+    width: fit-content;
+    height: fit-content;
+}
+.reviews .slick-list {
+    height: 585px;
+}
+
+
+
+
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -636,6 +793,22 @@ a {
     }
     .history-right {
         margin-left: 100px;
+    }
+
+    .review {
+        min-width: auto;
+    }
+    .review_info {
+        height: auto;
+    }
+    .reviews .slick-list {
+        height: auto;
+    }
+    .reviews .arrow-next {
+        bottom: -52px;
+    }
+    .reviews .slick-dots {
+        bottom: -30px;
     }
 }
 /* 901px - 1023px */
@@ -883,6 +1056,33 @@ a {
         padding: 0 20px 100px;
     }
 
+    .difference .container {
+        padding: 0 20px 100px;
+    }
+    .difference_item-text {
+        width: 100%;
+    }
+
+    .servicesAll .container {
+        padding: 0 20px 100px;
+    }
+    .servicesAll_item {
+        width: 100%;
+    }
+
+    .reviews .container {
+        padding: 0 20px 100px;
+    }
+    .reviews_item.slick-center {
+        margin-top: 0;
+    }
+    .reviews .arrow-next {
+        right: 20px;
+    }
+    .reviews .slick-dots {
+        right: 152px;
+    }
+
 }
 /* 481px - 900px */
 @media screen and (max-width: 900px) {
@@ -977,6 +1177,15 @@ a {
         line-height: 208%;
     }
 
+    .difference_item {
+        gap: 40px;
+    }
+
+    .servicesAll_item-header {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
 }
 
 /* 320px - 480px */
@@ -1121,4 +1330,98 @@ a {
         line-height: 143%;
         letter-spacing: 0.1em;
     }
+
+    .difference_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .difference_item-number {
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0.05em;
+        width: 30px;
+    }
+    .difference_item-text {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
+    }
+
+    .servicesAll_bg {
+        max-width: 260px;
+        top: -65px;
+    }
+    .servicesAll_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .servicesAll_item {
+        padding: 10px;
+    }
+    .servicesAll_item-header {
+        margin-bottom: 10px;
+    }
+    .servicesAll_item-name {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
+    }
+    .servicesAll_item-price {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.05em;
+    }
+    .servicesAll_item-text {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+
+    .reviews_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .review_info {
+        padding: 20px 10px;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+    }
+    .review_name {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+    }
+    .review_name-profession {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .reviews .arrow-next svg {
+        width: 40px;
+        height: 40px;
+    }
+    .reviews .slick-dots li button:before {
+        font-size: 4px;
+    }
+    .reviews .slick-dots li.slick-active button:before {
+        font-size: 6px;
+    }
+    .reviews .slick-dots {
+        right: 101px;
+    }
+    .reviews .advantages_action {
+        display: none;
+    }
+    .reviews .container {
+        padding: 0 20px 120px;
+    }
+
 }
