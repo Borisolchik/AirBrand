@@ -759,6 +759,123 @@ a {
     max-width: 153px;
 }
 
+.team .container {
+    padding: 0 150px 120px;
+    position: relative;
+}
+.team_bg {
+    position: absolute;
+    left: 0;
+    top: -70px;
+}
+.team_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.team_info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 250%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 80px;
+}
+.team_info span {
+    font-weight: 300;
+}
+.team_founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+.team_founder-img {
+    min-width: 300px;
+    width: 300px;
+    border-radius: 40px;
+}
+.team_founder-img img{
+    width: 100%;
+}
+.team_founder-name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #161414;
+    margin-bottom: 10px;
+}
+.team_founder-profession {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 20px;
+}
+.team_founder-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 680px;
+}
+.team_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 20px;
+    justify-content: space-between;
+}
+.team_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team_item-img {
+    min-width: 200px;
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.team_item-img img {
+    width: 100%;
+}
+.team_item-name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 10px;
+}
+.team_item-job {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 20px;
+}
+.team_item-info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    max-width: 300px;
+}
+
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -838,22 +955,6 @@ a {
     .history-right {
         margin-left: 100px;
     }
-
-    /*.review {*/
-    /*    min-width: auto;*/
-    /*}*/
-    /*.review_info {*/
-    /*    height: auto;*/
-    /*}*/
-    /*.reviews .slick-list {*/
-    /*    height: auto;*/
-    /*}*/
-    /*.reviews .arrow-next {*/
-    /*    bottom: -52px;*/
-    /*}*/
-    /*.reviews .slick-dots {*/
-    /*    bottom: -30px;*/
-    /*}*/
 }
 /* 901px - 1023px */
 @media screen and (max-width: 1023px) {
@@ -1127,7 +1228,6 @@ a {
         right: 152px;
     }
 
-
     .companies .container {
         padding: 0 20px 100px;
     }
@@ -1136,6 +1236,10 @@ a {
     }
     .companies_items {
         justify-content: center;
+    }
+
+    .team .container {
+        padding: 0 20px 100px;
     }
 
 }
@@ -1240,6 +1344,55 @@ a {
         flex-direction: column;
         align-items: start;
         gap: 10px;
+    }
+
+    .team_bg {
+        max-width: 260px;
+        top: -36px;
+    }
+    .team_founder {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team_founder-name {
+        text-align: center;
+    }
+    .team_founder-profession {
+        text-align: center;
+    }
+    .team_items {
+        display: none;
+    }
+    .team_items-slider {
+        display: block;
+    }
+    .team_item-info {
+        max-width: 100%;
+    }
+    .team_item-img {
+        margin: 0 auto 20px;
+    }
+    .team_items-slider {
+        position: relative;
+    }
+    .team .arrow-next {
+        position: absolute;
+        bottom: -71px;
+        right: 10px;
+    }
+    .team .slick-dots {
+        bottom: -60px;
+        right: 91px;
+        width: fit-content;
+    }
+    .team .slick-dots li button:before {
+        font-size: 4px;
+    }
+    .team .slick-dots li.slick-active button:before {
+        font-size: 6px;
+    }
+    .team_item {
+        padding: 0 10px;
     }
 }
 
@@ -1490,5 +1643,64 @@ a {
     }
     .companies_item img {
         max-width: 93px;
+    }
+
+    .team_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .team_info {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .team_founder-img {
+        width: 180px;
+        min-width: 180px;
+    }
+    .team_founder {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .team_founder-name {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 0;
+    }
+    .team_founder-profession {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+    .team_founder-text {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .team_item-img {
+        min-width: 180px;
+        margin-bottom: 10px;
+    }
+    .team_item-name {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 0;
+    }
+    .team_item-job {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+    .team_item-info {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
     }
 }
