@@ -1092,6 +1092,107 @@ a {
     color: #161414;
     max-width: 260px;
 }
+
+.instPromotion .container {
+    padding: 0 20px 120px;
+    position: relative;
+}
+.instPromotion_bg {
+    position: absolute;
+    left: 0;
+    top: 55px;
+}
+.instPromotion_box {
+    margin: 0 auto;
+    border: 1px solid rgba(22, 20, 20, 0.2);
+    border-radius: 20px;
+    padding: 43px 35px;
+    width: fit-content;
+}
+.instPromotion_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 40px;
+}
+.instPromotion_price {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 104%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 40px;
+}
+.instPromotion_info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 187%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+}
+.instPromotion_info span {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.reels .container {
+    padding: 0 200px 80px;
+}
+.reels_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.tab {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.reels_link {
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: rgba(22, 20, 20, 0.4);
+    border: none;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+.reels_link.active {
+    background-color: #161414;
+}
+.tabcontent_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.reels_items {
+    display: flex;
+    justify-content: space-between;
+}
+.tabcontent {
+    display: none;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1147,6 +1248,10 @@ a {
     .tools_items {
         flex-wrap: wrap;
         gap: 40px;
+    }
+
+    .reels .container {
+        padding: 0 100px 80px;
     }
 }
 /* 1024px - 1199px */
@@ -1516,6 +1621,14 @@ a {
         display: block;
     }
 
+    .instPromotion .container {
+        padding: 0 20px 100px;
+    }
+
+    .reels .container {
+        padding: 0 20px 60px;
+    }
+
 }
 /* 481px - 900px */
 @media screen and (max-width: 900px) {
@@ -1667,6 +1780,20 @@ a {
     }
     .team_item {
         padding: 0 10px;
+    }
+
+    .reels .advantages_action {
+        display: none;
+    }
+    .tab {
+        flex-wrap: wrap;
+        max-width: 300px;
+        justify-content: center;
+    }
+    .reels_items {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }
 }
 
@@ -2106,5 +2233,56 @@ a {
         font-size: 14px;
         line-height: 143%;
         letter-spacing: 0.1em;
+    }
+
+    .instPromotion_box {
+        padding: 20px 10px;
+    }
+    .instPromotion_bg {
+        top: -45px;
+        max-width: 300px;
+    }
+    .instPromotion_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+    }
+    .instPromotion_price {
+        font-size: 24px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .instPromotion_info {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .instPromotion_info span{
+        font-size: 12px;
+    }
+
+    .reels_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .tab {
+        gap: 20px 40px;
+        margin-bottom: 40px;
+    }
+    .tabcontent_title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        color: #161414;
+        margin-bottom: 40px;
+    }
+    .reels_item {
+        max-width: 150px;
+    }
+    .reels_item img {
+        width: 100%;
     }
 }
