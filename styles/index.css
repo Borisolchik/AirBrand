@@ -1040,6 +1040,58 @@ a {
     letter-spacing: 0.05em;
     text-align: center;
 }
+
+.tools .container {
+    padding: 0 140px 120px;
+}
+.tool_image-mob {
+    display: none;
+}
+.tools_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.tools_description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 60px;
+}
+.tools_items {
+    display: flex;
+    justify-content: space-between;
+}
+.tool_image {
+    max-width: 260px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+.tool_name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 20px;
+    max-width: 260px;
+}
+.tool_info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    color: #161414;
+    max-width: 260px;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1090,6 +1142,11 @@ a {
     .instBanner_title {
         max-width: 430px;
         margin-left: auto;
+    }
+
+    .tools_items {
+        flex-wrap: wrap;
+        gap: 40px;
     }
 }
 /* 1024px - 1199px */
@@ -1443,6 +1500,20 @@ a {
     }
     .advertising .container {
         padding: 0 20px 100px;
+    }
+
+    .tools .container {
+        padding: 0 20px 100px;
+    }
+    .tools_items {
+        gap: 80px;
+        justify-content: center;
+    }
+    .tool_image {
+        display: none;
+    }
+    .tool_image-mob {
+        display: block;
     }
 
 }
@@ -1998,6 +2069,42 @@ a {
     .advertising_text {
         font-size: 14px;
         line-height: 125%;
+        letter-spacing: 0.1em;
+    }
+
+    .tools_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .tools_description {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.05em;
+        margin-bottom: 40px;
+    }
+    .tool_image-mob {
+        max-width: 260px;
+        margin-bottom: 20px;
+    }
+    .tool_image-mob img {
+        width: 100%;
+    }
+    .tools_items {
+        gap: 40px;
+    }
+    .tool_name {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        max-width: 260px;
+    }
+    .tool_info {
+        max-width: 260px;
+        font-size: 14px;
+        line-height: 143%;
         letter-spacing: 0.1em;
     }
 }
