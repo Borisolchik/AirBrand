@@ -118,6 +118,14 @@ $(".reviews_items").slick({
 
 
 
+$(".advertisingTarget_items").slick({
+    centerMode: true,
+    centerPadding: '0',
+    slidesToShow: 3,
+    focusOnSelect: true
+});
+
+
 $(".team_items-slider").slick({
     dots: true,
     slidesToShow: 1,
