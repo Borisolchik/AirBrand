@@ -74,7 +74,7 @@ a {
     padding: 10px 10px 10px 29px;
     transition: 0.4s;
     border: none;
-    background-color: white;
+    background-color: transparent;
     cursor: pointer;
 }
 .btn span{
@@ -1339,6 +1339,98 @@ a {
     color: #161414;
     max-width: 340px;
 }
+
+.targetBanner .container {
+    padding: 20px 60px 120px;
+    position: relative;
+}
+.targetBanner_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+.targetBanner_title-text {
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    color: #161414;
+}
+.targetBanner_description {
+    font-weight: 300;
+    line-height: 167%;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #161414;
+}
+.targetBanner_description span {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+}
+.targetBanner_price {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    color: #161414;
+}
+
+.targetMeta .container {
+    padding: 0 20px 120px;
+    position: relative;
+}
+.targetMeta_bg {
+    position: absolute;
+    right: -20px;
+    bottom: 85px;
+    z-index: -1;
+}
+.targetMeta_box {
+    border: 1px solid rgba(22, 20, 20, 0.2);
+    border-radius: 20px;
+    padding: 50px 47px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.targetMeta_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 20px;
+}
+.targetMeta_description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 40px;
+}
+.targetMeta_price {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 104%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 40px;
+}
+.targetMeta_info {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1409,6 +1501,10 @@ a {
     .instStandart_items {
         justify-content: center;
         gap: 40px 60px;
+    }
+
+    .targetBanner_title-text {
+        max-width: 400px;
     }
 }
 /* 1024px - 1199px */
@@ -1803,6 +1899,31 @@ a {
     .instResult .container {
         padding: 0 20px 100px;
     }
+
+    .targetBanner .container {
+        padding: 109px 20px 100px;
+    }
+    .targetBanner_title {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 40px;
+        margin-bottom: 0;
+    }
+    .targetBanner_title-text {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .targetBanner_title-image {
+        max-width: 225px;
+        margin-left: auto;
+    }
+    .targetBanner_title-image img{
+        width: 100%;
+    }
+
+    .targetMeta .container {
+        padding: 0 20px 100px;
+    }
 }
 /* 481px - 900px */
 @media screen and (max-width: 900px) {
@@ -1970,7 +2091,6 @@ a {
         justify-content: center;
     }
 }
-
 /* 320px - 480px */
 @media screen and (max-width: 480px) {
     .banner_action {
@@ -2524,5 +2644,59 @@ a {
         max-width: 300px;
         font-size: 14px;
         line-height: 143%;
+    }
+
+    .targetBanner_title-text {
+        font-size: 24px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .targetBanner_description {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
+    }
+    .targetBanner_description span {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+    }
+    .targetBanner_price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    .targetMeta_box {
+        padding: 20px 10px;
+    }
+    .targetMeta_bg {
+        max-width: 300px;
+        bottom: 147px;
+        right: 0;
+    }
+    .targetMeta_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+    }
+    .targetMeta_description {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+    .targetMeta_price {
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+    .targetMeta_info {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
     }
 }
