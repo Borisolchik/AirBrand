@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AirBrand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.js?ver=6.4.3" id="jquery-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+<header class="header header_desc">
+    <div class="container">
+        <a href="index.html" class="header_logo">
+            <img src="images/logo_white_2x.png" alt="logo">
+            <img src="images/header_bg_logo_2x.png" alt="background" class="header_logo_bg">
+        </a>
+        <nav>
+            <ul class="header_menu">
+                <li class="header_menu-item"><a href="index.html">О нас</a></li>
+                <li class="header_menu-item"><a href="page_instagram.html">Instagram</a></li>
+                <li class="header_menu-item"><a href="page_target.html">Таргет</a></li>
+                <li class="header_menu-item active"><a href="page_websites.html">Сайты</a></li>
+                <li class="header_menu-item"><a href="#">Ивенты</a></li>
+            </ul>
+        </nav>
+        <button class="header_action btn">
+            <span>Заказать</span>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C23.2844 0 30 6.71562 30 15C30 23.2844 23.2844 30 15 30C6.71562 30 0 23.2844 0 15C0 6.71562 6.71562 0 15 0ZM20.1744 21.1144C20.45 20.2681 21.7431 11.8313 21.9025 10.1688C21.9506 9.665 21.7919 9.33063 21.48 9.18125C21.1031 9 20.545 9.09063 19.8969 9.32438C19.0087 9.64438 7.65312 14.4662 6.99687 14.745C6.375 15.0094 5.78625 15.2975 5.78625 15.715C5.78625 16.0088 5.96063 16.1737 6.44063 16.345C6.94 16.5231 8.19812 16.9044 8.94125 17.1094C9.65687 17.3069 10.4712 17.1356 10.9275 16.8519C11.4112 16.5513 16.9963 12.8144 17.3969 12.4869C17.7975 12.1594 18.1169 12.5788 17.7894 12.9069C17.4619 13.2344 13.6288 16.955 13.1231 17.47C12.5094 18.0956 12.945 18.7437 13.3569 19.0031C13.8269 19.2994 17.2087 21.5675 17.7181 21.9312C18.2275 22.295 18.7438 22.46 19.2169 22.46C19.69 22.46 19.9387 21.8375 20.1744 21.1144Z"
+                      fill="white"/>
+            </svg>
+        </button>
+    </div>
+</header>
+<header class="header-mob hide">
+    <div class="header__container-bg"></div>
+    <div class="header__container">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo-main" src="images/header_logo_mob_2x.png" width='69px' alt="header-logo">
+            <img class="header__logo-active" src="images/header_logo_mob_hover_2x.png" width='69px' alt="header-logo">
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__icon-block">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a class="menu__link" href="index.html">О нас</a></li>
+                    <li><a class="menu__link" href="page_instagram.html">Instagram</a></li>
+                    <li><a class="menu__link" href="page_target.html">Таргет</a></li>
+                    <li><a class="menu__link active" href="page_websites.html">Сайты</a></li>
+                    <li><a class="menu__link" href="#">Ивенты</a></li>
+                    <li><a class="menu__link" href="#">Контакты</a></li>
+                </ul>
+                <button class="header_action_mob btn">
+                    <img class="header_action_mob-bg" src="images/menu_mob_bg.png" alt="AirBrand">
+                    <span>Заказать</span>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5996 0C19.2271 0 24.5996 5.3725 24.5996 12C24.5996 18.6275 19.2271 24 12.5996 24C5.97211 24 0.599609 18.6275 0.599609 12C0.599609 5.3725 5.97211 0 12.5996 0ZM16.7391 16.8915C16.9596 16.2145 17.9941 9.465 18.1216 8.135C18.1601 7.732 18.0331 7.4645 17.7836 7.345C17.4821 7.2 17.0356 7.2725 16.5171 7.4595C15.8066 7.7155 6.72211 11.573 6.19711 11.796C5.69961 12.0075 5.22861 12.238 5.22861 12.572C5.22861 12.807 5.36811 12.939 5.75211 13.076C6.15161 13.2185 7.15811 13.5235 7.75261 13.6875C8.32511 13.8455 8.97661 13.7085 9.34161 13.4815C9.72861 13.241 14.1966 10.2515 14.5171 9.9895C14.8376 9.7275 15.0931 10.063 14.8311 10.3255C14.5691 10.5875 11.5026 13.564 11.0981 13.976C10.6071 14.4765 10.9556 14.995 11.2851 15.2025C11.6611 15.4395 14.3666 17.254 14.7741 17.545C15.1816 17.836 15.5946 17.968 15.9731 17.968C16.3516 17.968 16.5506 17.47 16.7391 16.8915Z"
+                              fill="white"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </div>
+</header>
+<header class="header header_scroll">
+    <div class="container">
+        <a href="#" class="header_logo">
+            <img src="images/logo_black_2x.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="header_menu">
+                <li class="header_menu-item"><a href="index.html">О нас</a></li>
+                <li class="header_menu-item"><a href="page_instagram.html">Instagram</a></li>
+                <li class="header_menu-item"><a href="page_target.html">Таргет</a></li>
+                <li class="header_menu-item active"><a href="page_websites.html">Сайты</a></li>
+                <li class="header_menu-item"><a href="#">Ивенты</a></li>
+            </ul>
+        </nav>
+        <button class="header_action btn">
+            <span>Заказать</span>
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C23.2844 0 30 6.71562 30 15C30 23.2844 23.2844 30 15 30C6.71562 30 0 23.2844 0 15C0 6.71562 6.71562 0 15 0ZM20.1744 21.1144C20.45 20.2681 21.7431 11.8313 21.9025 10.1688C21.9506 9.665 21.7919 9.33063 21.48 9.18125C21.1031 9 20.545 9.09063 19.8969 9.32438C19.0087 9.64438 7.65312 14.4662 6.99687 14.745C6.375 15.0094 5.78625 15.2975 5.78625 15.715C5.78625 16.0088 5.96063 16.1737 6.44063 16.345C6.94 16.5231 8.19812 16.9044 8.94125 17.1094C9.65687 17.3069 10.4712 17.1356 10.9275 16.8519C11.4112 16.5513 16.9963 12.8144 17.3969 12.4869C17.7975 12.1594 18.1169 12.5788 17.7894 12.9069C17.4619 13.2344 13.6288 16.955 13.1231 17.47C12.5094 18.0956 12.945 18.7437 13.3569 19.0031C13.8269 19.2994 17.2087 21.5675 17.7181 21.9312C18.2275 22.295 18.7438 22.46 19.2169 22.46C19.69 22.46 19.9387 21.8375 20.1744 21.1144Z"
+                      fill="white"/>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<section class="websitesBanner">
+    <div class="container">
+        <img src="images/header_bg_logo_2x.png" alt="background" class="header_logo_mob_bg">
+        <div class="websitesBanner_header">
+            <div class="websitesBanner_image"><img src="images/websitesBanner.png" alt=""></div>
+            <div class="websitesBanner_title">САЙТ НА WORDPRESS И TILDA ОТ 10 ДНЕЙ?</div>
+        </div>
+        <div class="websitesBanner_description">Понятный, продающий дизайн и функциональный движок для вашего бизнеса</div>
+    </div>
+</section>
+<section class="advantages">
+    <div class="container">
+        <div class="advantages_title">НАШИ ПРЕИМУЩЕСТВА</div>
+        <div class="advantages_items">
+            <div class="advantages_items-left">
+                <div class="advantages_item">
+                    <div class="advantages_item-header">
+                        <div class="advantages_item-number">1</div>
+                        <div class="advantages_item-title">Опыт руководителя</div>
+                    </div>
+                    <div class="advantages_item-text">10 лет в маркетинге, 5 лет в управлении интернет-проектами и 3
+                        года собственного бизнеса. 4 университетских диплома, курсы по интернет-маркетингу, продвижению
+                        сайтов и веб-дизайну.
+                    </div>
+                </div>
+                <div class="advantages_item">
+                    <div class="advantages_item-header">
+                        <div class="advantages_item-number">2</div>
+                        <div class="advantages_item-title">Дружная команда</div>
+                    </div>
+                    <div class="advantages_item-text">Основа команды — люди, которые работали вместе на десятках
+                        проектов и давно знакомы. Высокий уровень взаимопонимания позволяет эффективно работать.
+                    </div>
+                </div>
+                <div class="advantages_item">
+                    <div class="advantages_item-header">
+                        <div class="advantages_item-number">3</div>
+                        <div class="advantages_item-title">Маркетинг “под ключ”</div>
+                    </div>
+                    <div class="advantages_item-text">Всё что мы предлагаем, не требует дополнительного поиска
+                        исполнителей от клиента. Весь маркетинг мы закрываем комплексно, но не отказываемся и от
+                        отдельных задач.
+                    </div>
+                </div>
+            </div>
+            <div class="advantages_items-right">
+                <div class="advantages_item">
+                    <div class="advantages_item-header">
+                        <div class="advantages_item-number">4</div>
+                        <div class="advantages_item-title">Партнёрский подход</div>
+                    </div>
+                    <div class="advantages_item-text">Нам интересно долгое сотрудничество и взаимоуважение. Мы любим,
+                        когда клиенты звонят рано утром или поздно вечером с новыми идеями и просьбами.
+                    </div>
+                </div>
+                <div class="advantages_item">
+                    <div class="advantages_item-header">
+                        <div class="advantages_item-number">5</div>
+                        <div class="advantages_item-title">Международный опыт</div>
+                    </div>
+                    <div class="advantages_item-text">Мы разрабатывали дизайн и сайты для международных проектов,
+                        монтировали видео и создавали визуалы для бизнеса, находящегося не только в Беларуси, но и за её
+                        пределами.
+                    </div>
+                </div>
+                <div class="advantages_item">
+                    <div class="advantages_item-header">
+                        <div class="advantages_item-number">6</div>
+                        <div class="advantages_item-title">Креативный подход</div>
+                    </div>
+                    <div class="advantages_item-text">Сначала думаем, а потом делаем. Мы не копируем опыт ваших
+                        конкурентов, а создаём лучшее на основе полученных результатов. К нам обращаются, когда хотят
+                        громко и сильно
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages_action">
+            <button class="header_action btn">
+                <span>Заказать</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 0C23.2844 0 30 6.71562 30 15C30 23.2844 23.2844 30 15 30C6.71562 30 0 23.2844 0 15C0 6.71562 6.71562 0 15 0ZM20.1744 21.1144C20.45 20.2681 21.7431 11.8313 21.9025 10.1688C21.9506 9.665 21.7919 9.33063 21.48 9.18125C21.1031 9 20.545 9.09063 19.8969 9.32438C19.0087 9.64438 7.65312 14.4662 6.99687 14.745C6.375 15.0094 5.78625 15.2975 5.78625 15.715C5.78625 16.0088 5.96063 16.1737 6.44063 16.345C6.94 16.5231 8.19812 16.9044 8.94125 17.1094C9.65687 17.3069 10.4712 17.1356 10.9275 16.8519C11.4112 16.5513 16.9963 12.8144 17.3969 12.4869C17.7975 12.1594 18.1169 12.5788 17.7894 12.9069C17.4619 13.2344 13.6288 16.955 13.1231 17.47C12.5094 18.0956 12.945 18.7437 13.3569 19.0031C13.8269 19.2994 17.2087 21.5675 17.7181 21.9312C18.2275 22.295 18.7438 22.46 19.2169 22.46C19.69 22.46 19.9387 21.8375 20.1744 21.1144Z"
+                          fill="white"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="portfolio">
+    <div class="container">
+        <div class="portfolio_title">СОЛИДНОЕ ПОРТФОЛИО</div>
+        <div class="portfolio_description">Дизайн и создание сайтов на Tilda и WordPress</div>
+        <div class="portfolio_items">
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_1.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_2.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_3.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_4.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_5.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_6.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_7.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_8.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_9.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_10.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_11.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_12.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_13.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_14.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_15.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_16.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_17.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_18.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_19.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_20.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_21.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_22.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_23.png" alt=""></div>
+            <div class="portfolio_item"><img src="images/portfolio/portfolio_24.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer_menu">
+            <ul>
+                <li class="footer_menu1"><a href="index.html">О нас</a></li>
+                <li class="footer_menu2"><a href="page_instagram.html">Instagram</a></li>
+                <li class="footer_menu3"><a href="page_target.html">Таргет</a></li>
+                <li class="footer_menu4"><a href="page_websites.html">Сайты</a></li>
+                <li class="footer_menu5"><a href="#">Ивенты</a></li>
+                <li class="footer_menu6"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer_contacts">
+            <div class="footer_action">
+                <button class="footer_contacts-action btn">
+                    <span>Узнать больше</span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 0C23.2844 0 30 6.71562 30 15C30 23.2844 23.2844 30 15 30C6.71562 30 0 23.2844 0 15C0 6.71562 6.71562 0 15 0ZM20.1744 21.1144C20.45 20.2681 21.7431 11.8313 21.9025 10.1688C21.9506 9.665 21.7919 9.33063 21.48 9.18125C21.1031 9 20.545 9.09063 19.8969 9.32438C19.0087 9.64438 7.65312 14.4662 6.99687 14.745C6.375 15.0094 5.78625 15.2975 5.78625 15.715C5.78625 16.0088 5.96063 16.1737 6.44063 16.345C6.94 16.5231 8.19812 16.9044 8.94125 17.1094C9.65687 17.3069 10.4712 17.1356 10.9275 16.8519C11.4112 16.5513 16.9963 12.8144 17.3969 12.4869C17.7975 12.1594 18.1169 12.5788 17.7894 12.9069C17.4619 13.2344 13.6288 16.955 13.1231 17.47C12.5094 18.0956 12.945 18.7437 13.3569 19.0031C13.8269 19.2994 17.2087 21.5675 17.7181 21.9312C18.2275 22.295 18.7438 22.46 19.2169 22.46C19.69 22.46 19.9387 21.8375 20.1744 21.1144Z" fill="#161414"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="footer_contact footer_phone">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30.9453C23.2843 30.9453 30 24.2296 30 15.9453C30 7.66104 23.2843 0.945312 15 0.945312C6.71573 0.945312 0 7.66104 0 15.9453C0 24.2296 6.71573 30.9453 15 30.9453ZM16.5722 22.4434C17.9473 23.2116 18.8656 23.4481 19.5193 23.4481C19.8613 23.4517 20.1997 23.3776 20.5089 23.2314C21.111 22.9511 21.4717 22.5388 21.8277 22.0064C22.0273 21.7037 22.1987 21.3833 22.3397 21.0493C22.352 21.0205 22.3637 20.9941 22.3746 20.9697L22.3802 20.9572L22.3827 20.9516C22.4567 20.7842 22.5664 20.536 22.4472 20.2204C22.3672 20.0084 22.2034 19.8195 21.9097 19.5235C21.3059 18.9143 19.9292 18.0935 19.3264 17.7894L19.3211 17.7868C18.8621 17.5553 18.584 17.415 18.2594 17.415H18.2574C17.883 17.415 17.601 17.6029 17.244 17.8685C17.1987 17.9018 17.1552 17.9351 17.1127 17.9676C17.1052 17.9733 17.0977 17.979 17.0903 17.9847C16.7447 18.2486 16.6459 18.3068 16.4657 18.2683C16.1171 18.194 15.1131 17.6722 14.1979 16.759C13.2826 15.8457 12.7257 14.8119 12.651 14.4646C12.6142 14.2918 12.6701 14.1951 12.9249 13.8602L12.9299 13.8537C12.9705 13.8001 13.0124 13.745 13.0545 13.6874C13.2886 13.3682 13.4815 13.0725 13.4815 12.6891C13.4812 12.3623 13.3455 12.0708 13.1403 11.6301L13.1389 11.6271C12.8322 10.9707 12.0006 9.6342 11.3922 9.03407C11.0954 8.74104 10.9059 8.57795 10.6936 8.49825C10.3754 8.37769 10.1243 8.49055 9.95849 8.56523C9.93069 8.57762 9.89955 8.59135 9.86606 8.60575C9.53139 8.7456 9.21033 8.916 8.90693 9.11478C8.37278 9.47144 7.95953 9.83078 7.67956 10.4316C7.44447 10.9342 7.23416 12.1104 8.46789 14.3541C9.55997 16.3414 10.3403 17.3789 11.9437 18.9813C13.6068 20.64 14.9001 21.5057 16.5722 22.4434Z" fill="#FFBE98"/>
+                </svg>
+                <a href="tel:+375447700288" target="_blank">+375 44 770 02 88</a>
+            </div>
+            <div class="footer_contact footer_mail">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0.945312C6.71573 0.945312 0 7.66104 0 15.9453C0 24.2296 6.71573 30.9453 15 30.9453C23.2843 30.9453 30 24.2296 30 15.9453C30 7.66104 23.2843 0.945312 15 0.945312ZM14.9752 16.826L9.37221 12.7588V21.3335H8.43611C7.91456 21.3335 7.5 20.9189 7.5 20.3974V10.9159C7.5 10.8835 7.5016 10.8528 7.50472 10.8236C7.51892 10.6679 7.57367 10.5149 7.67358 10.3802C7.98116 9.96565 8.58294 9.87204 9.01087 10.1796L14.9886 14.5258L21.0064 10.1261C21.421 9.81855 22.0094 9.91216 22.317 10.3401C22.4802 10.5601 22.5304 10.829 22.4777 11.079V20.4107C22.4777 20.9189 22.0631 21.3335 21.5416 21.3335H20.6055V12.738L14.9752 16.826Z" fill="#FFBE98"/>
+                </svg>
+                <a href="mailto:airbrandpost@gmail.com" target="_blank">airbrandpost@gmail.com</a>
+            </div>
+            <div class="footer_contact footer_inst">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30ZM8 9.99228C8 8.86151 8.86154 7.99997 9.99231 7.99997H20.0077C21.1385 7.99997 22 8.86151 22 9.99228V20.0077C22 21.1384 21.1385 22 20.0077 22H9.99231C8.86154 22 8 21.1384 8 20.0077V9.99228ZM19.2 15.1615C19.2 17.3692 17.3154 19.2 15 19.2C12.6846 19.2 10.8 17.3692 10.8538 15.1077C10.8538 14.7307 10.9077 14.3538 11.0154 13.9769H9.77693V19.7384C9.77693 20.0615 10.0462 20.2769 10.3154 20.2769H19.6846C20.0077 20.2769 20.2231 20.0077 20.2231 19.7384V14.0307H19.0385C19.1462 14.3538 19.2 14.7846 19.2 15.1615ZM12.3077 14.9461C12.3077 16.4 13.4923 17.5846 15 17.5846C16.5077 17.5846 17.6923 16.4538 17.6923 14.9461C17.6923 13.4923 16.5077 12.3077 15 12.3077C13.4923 12.3077 12.3077 13.4923 12.3077 14.9461ZM19.5769 12.4154C19.9 12.4154 20.1692 12.1461 20.1692 11.823V10.3692C20.1692 10.0461 19.9 9.77689 19.5769 9.77689H18.0692C17.7462 9.77689 17.4769 10.0461 17.4769 10.3692V11.823C17.4769 12.1461 17.7462 12.4154 18.0692 12.4154H19.5769Z" fill="#FFBE98"/>
+                </svg>
+
+                <a href="https://www.instagram.com/airbrand.by" target="_blank">airbrand.by</a>
+            </div>
+        </div>
+        <div class="footer_info">
+            Минск, ул. Гамарника, 30
+            <br>Индивидуальный предприниматель
+            <br>Новиков Антон Игоревич
+            <br>УНП 193578051
+            <br>р/с BY70ALFA30132A49020010270000 BYN
+            <br>р/с BY55ALFA30132A49020020270000 RUB
+            <br>в ЗАО "Альфа-Банк"
+            <br>220013 г. Минск, ул. Сурганова 43-47
+            <br>БИК: ALFABY2X
+
+            <div class="footer_logo"><img src="images/footer_logo_2x.png" alt=""></div>
+        </div>
+    </div>
+</footer>
+<script src="scripts/index.js"></script>
+</body>
+</html>

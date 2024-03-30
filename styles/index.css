@@ -1431,6 +1431,142 @@ a {
     text-align: center;
     color: #161414;
 }
+
+.howWork .container {
+    padding: 0 20px 120px;
+}
+.howWork_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.howWork_items {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.howWork_center {
+    max-width: 60px;
+}
+.howWork_center img{
+    width: 100%;
+}
+.howWork_item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 10px;
+}
+.howWork_item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 360px;
+}
+.howWork_left .howWork_item:first-child {
+    margin-bottom: 120px;
+}
+.howWork_left .howWork_item:last-child {
+    margin-top: 120px;
+}
+.howWork_right .howWork_item {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+.howWork_item-mob {
+    display: none;
+}
+.howWork_center-mob {
+    display: none;
+}
+
+.whichResult .container {
+    padding: 0 140px 120px;
+}
+.whichResult_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #000;
+    padding-bottom: 60px;
+    text-align: center;
+    border-bottom: 1px solid #161414;
+}
+.whichResult_item {
+    display: flex;
+    padding: 35px 0;
+    border-bottom: 1px solid #161414;
+}
+.whichResult_item-number {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffbe98;
+    width: 33px;
+    margin-right: 127px;
+}
+.whichResult_item-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.whichResult_item-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: 0.05em;
+    color: #161414;
+}
+.whichResult_item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 460px;
+}
+
+.websitesBanner .container {
+    padding: 62px 60px 120px;
+    position: relative;
+}
+.websitesBanner_header {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-bottom: 90px;
+}
+.websitesBanner_title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 760px;
+    margin-left: -85px;
+}
+.websitesBanner_description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 759px;
+}
+.websitesBanner_image {
+    margin-left: 235px;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1506,6 +1642,14 @@ a {
     .targetBanner_title-text {
         max-width: 400px;
     }
+
+    .whichResult_item-number {
+        margin-right: 60px;
+    }
+
+    .websitesBanner_title {
+        line-height: 155%;
+    }
 }
 /* 1024px - 1199px */
 @media screen and (max-width: 1199px) {
@@ -1558,6 +1702,13 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         gap: 60px;
+    }
+
+    .websitesBanner_title {
+        font-size: 29px;
+    }
+    .websitesBanner_image {
+        margin-left: 200px;
     }
 }
 /* 901px - 1023px */
@@ -1924,6 +2075,33 @@ a {
     .targetMeta .container {
         padding: 0 20px 100px;
     }
+
+    .howWork .container {
+        padding: 0 20px 100px;
+    }
+
+    .whichResult .container {
+        padding: 0 20px 100px;
+    }
+    .whichResult_item-number {
+        margin-right: 40px;
+    }
+
+    .websitesBanner .container {
+        padding: 86px 20px 100px;
+    }
+    .websitesBanner_image {
+        max-width: 182px;
+    }
+    .websitesBanner_image img {
+        width: 100%;
+    }
+    .websitesBanner_image {
+        margin-left: 115px;
+    }
+    .websitesBanner_title {
+        margin-left: 0;
+    }
 }
 /* 481px - 900px */
 @media screen and (max-width: 900px) {
@@ -2089,6 +2267,57 @@ a {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+    }
+
+    .howWork_left {
+        display: none;
+    }
+    .howWork_item-mob {
+        display: block;
+    }
+    .howWork_center-mob {
+        display: block;
+    }
+    .howWork_center-desc {
+        display: none;
+    }
+    .howWork_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .howWork_items {
+        gap: 20px;
+    }
+    .howWork_item-title {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
+    }
+    .howWork_item-text {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .howWork_right {
+        padding-top: 10px;
+    }
+    .howWork_right .howWork_item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .howWork_item-text {
+        max-width: 240px;
+    }
+
+    .whichResult_item-info {
+        flex-wrap: wrap;
+    }
+
+    .websitesBanner_header {
+        flex-direction: column;
+        gap: 80px;
     }
 }
 /* 320px - 480px */
@@ -2697,6 +2926,48 @@ a {
     .targetMeta_info {
         font-size: 12px;
         line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+
+    .whichResult_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        padding-bottom: 40px;
+    }
+    .whichResult_item {
+        padding: 20px 0;
+    }
+    .whichResult_item-number {
+        font-size: 32px;
+        width: 22px;
+    }
+    .whichResult_item-title {
+        font-size: 16px;
+    }
+    .whichResult_item-info {
+        gap: 20px;
+    }
+    .whichResult_item-text {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
+    }
+
+    .websitesBanner_image {
+        margin-right: 20px;
+    }
+    .websitesBanner_header {
+        margin-bottom: 40px;
+    }
+    .websitesBanner_title {
+        font-size: 24px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+    .websitesBanner_description {
+        font-size: 14px;
+        line-height: 143%;
         letter-spacing: 0.1em;
     }
 }
