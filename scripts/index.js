@@ -91,6 +91,22 @@ if (button1) {
     });
 }
 
+let portfolio_array = document.querySelectorAll('.portfolio_item');
+for (let i = 6; i < portfolio_array.length; i++) {
+    portfolio_array[i].classList.add('none');
+}
+const portfolio_btn = document.querySelector('#portfolio_btn');
+if (portfolio_btn) {
+    portfolio_btn.addEventListener('click', () => {
+        let elements1 = document.querySelectorAll('.portfolio_item.none');
+
+        for (let i = 0; i < elements1.length; i++) {
+            elements1[i].classList.remove('none');
+        }
+        portfolio_btn.classList.add('none');
+    });
+}
+
 $(".reviews_items").slick({
     dots: true,
     infinite: true,

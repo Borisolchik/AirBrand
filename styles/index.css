@@ -1567,6 +1567,40 @@ a {
 .websitesBanner_image {
     margin-left: 235px;
 }
+
+.portfolio .container {
+    padding: 0 70px 120px;
+}
+.portfolio_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.portfolio_description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #000;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.portfolio_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.portfolio_item {
+    max-width: 310px;
+}
+.portfolio_item img{
+    width: 100%;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1709,6 +1743,10 @@ a {
     }
     .websitesBanner_image {
         margin-left: 200px;
+    }
+
+    .portfolio_item {
+        max-width: 250px;
     }
 }
 /* 901px - 1023px */
@@ -1905,7 +1943,26 @@ a {
         color: #000;
         margin: -40px auto 40px;
     }
+    #portfolio_btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 0;
+        background-color: transparent;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        color: #000;
+        margin: 40px auto 0;
+    }
     #cases_btn.none {
+        display: none;
+    }
+    #portfolio_btn.none {
+        display: none;
+    }
+    .portfolio_item.none {
         display: none;
     }
     .cases_action.none {
@@ -2101,6 +2158,10 @@ a {
     }
     .websitesBanner_title {
         margin-left: 0;
+    }
+
+    .portfolio .container {
+        padding: 0 20px 100px;
     }
 }
 /* 481px - 900px */
@@ -2318,6 +2379,9 @@ a {
     .websitesBanner_header {
         flex-direction: column;
         gap: 80px;
+    }
+    .portfolio_item {
+        max-width: 140px;
     }
 }
 /* 320px - 480px */
@@ -2969,5 +3033,18 @@ a {
         font-size: 14px;
         line-height: 143%;
         letter-spacing: 0.1em;
+    }
+
+    .portfolio_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .portfolio_description {
+        font-size: 15px;
+        line-height: 200%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
     }
 }
