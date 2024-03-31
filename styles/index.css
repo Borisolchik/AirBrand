@@ -1601,6 +1601,85 @@ a {
 .portfolio_item img{
     width: 100%;
 }
+#portfolio_btn {
+    display: none;
+}
+
+.sitePrice .container {
+    padding: 0 60px 120px;
+    position: relative;
+}
+.sitePrice_bg {
+    position: absolute;
+    left: 0;
+    bottom: -113px;
+}
+.sitePrice_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 60px;
+}
+.sitePrice_items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.sitePrice_item {
+    border: 1px solid rgba(22, 20, 20, 0.2);
+    border-radius: 20px;
+    padding: 26px 24px 23px;
+}
+.sitePrice_subtitle {
+    max-width: 351px;
+    height: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin: 0 auto 25px;
+}
+.sitePrice_description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 45px;
+}
+.sitePrice_cost {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 104%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-bottom: 20px;
+}
+.sitePrice_cost-description {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    max-width: 400px;
+}
+.sitePrice_info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 214%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+    margin-top: 40px;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1747,6 +1826,11 @@ a {
 
     .portfolio_item {
         max-width: 250px;
+    }
+
+    .sitePrice_items {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 /* 901px - 1023px */
@@ -2161,6 +2245,10 @@ a {
     }
 
     .portfolio .container {
+        padding: 0 20px 100px;
+    }
+
+    .sitePrice .container {
         padding: 0 20px 100px;
     }
 }
@@ -3047,4 +3135,47 @@ a {
         letter-spacing: 0.1em;
         margin-bottom: 40px;
     }
+
+    .sitePrice_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .sitePrice_bg {
+        max-width: 260px;
+        top: 618px;
+    }
+    .sitePrice_bg img{
+        width: 100%;
+    }
+    .sitePrice_item {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .sitePrice_subtitle {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        height: fit-content;
+    }
+    .sitePrice_description {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+    .sitePrice_cost {
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+    .sitePrice_info {
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.1em;
+    }
+
 }
