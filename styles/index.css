@@ -1768,7 +1768,42 @@ a {
     max-width: 340px;
 }
 
-
+.iventsBanner .container {
+    padding: 18px 60px 120px;
+    position: relative;
+}
+.iventsBanner_title {
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+.iventsBanner_text {
+    margin-top: 293px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 760px;
+}
+.iventsBanner_description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    max-width: 759px;
+}
+.iventsBanner_dopText {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #161414;
+    margin-top: 130px;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -2360,6 +2395,23 @@ a {
 
     .websitesResult .container {
         padding: 0 20px 100px;
+    }
+
+    .iventsBanner .container {
+        padding: 153px 20px 100px;
+    }
+    .iventsBanner_image {
+        max-width: 188px;
+        margin-left: auto;
+    }
+    .iventsBanner_image img {
+        width: 100%;
+    }
+    .iventsBanner_title {
+        flex-direction: column-reverse;
+    }
+    .iventsBanner_text {
+        margin-top: 0;
     }
 }
 /* 481px - 900px */
@@ -3330,4 +3382,21 @@ a {
         line-height: 143%;
     }
 
+    .iventsBanner_text {
+        font-size: 24px;
+        line-height: 167%;
+        margin-bottom: 40px;
+    }
+    .iventsBanner_title {
+        margin-bottom: 0;
+    }
+    .iventsBanner_description {
+        font-size: 14px;
+        line-height: 143%;
+    }
+    .iventsBanner_dopText {
+        font-size: 16px;
+        line-height: 187%;
+        margin-top: 100px;
+    }
 }
