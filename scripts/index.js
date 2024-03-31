@@ -107,6 +107,22 @@ if (portfolio_btn) {
     });
 }
 
+let iventsCases_array = document.querySelectorAll('.iventCases_item-box');
+for (let i = 3; i < iventsCases_array.length; i++) {
+    iventsCases_array[i].classList.add('none');
+}
+const iventsCases_btn = document.querySelector('#iventsCases_btn');
+if (iventsCases_btn) {
+    iventsCases_btn.addEventListener('click', () => {
+        let elements1 = document.querySelectorAll('.iventCases_item-box.none');
+
+        for (let i = 0; i < elements1.length; i++) {
+            elements1[i].classList.remove('none');
+        }
+        iventsCases_btn.classList.add('none');
+    });
+}
+
 $(".reviews_items").slick({
     dots: true,
     infinite: true,
@@ -140,6 +156,20 @@ $(".advertisingTarget_items").slick({
     slidesToShow: 3,
     focusOnSelect: true
 });
+
+
+
+$(".iventCases_item-images").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<div class="arrow-next"><svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '  <path fill-rule="evenodd" clip-rule="evenodd" d="M52.0005 25C52.0005 11.2093 40.4275 0 26.1893 0C11.9511 0 0.378067 11.2093 0.378067 25C0.378067 38.7907 11.9511 50 26.1893 50C40.4275 50 52.0005 38.7907 52.0005 25ZM21.5491 34.3895C21.9092 34.7384 22.3654 34.9012 22.8216 34.9012C23.2778 34.9012 23.734 34.7384 24.0942 34.3895L32.5699 26.1802C33.2662 25.5058 33.2662 24.3895 32.5699 23.7151L24.0942 15.5058C23.3979 14.8314 22.2454 14.8314 21.5491 15.5058C20.8528 16.1802 20.8528 17.2965 21.5491 17.9709L28.7522 24.9477L21.5491 31.9244C20.8528 32.5988 20.8528 33.7151 21.5491 34.3895Z" fill="white"/>\n' +
+    '  </svg></div>',
+    prevArrow: '<div class="arrow-prev"><svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '  <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000488281 25C-0.000488281 38.7907 11.5725 50 25.8107 50C40.0489 50 51.6219 38.7907 51.6219 25C51.6219 11.2093 40.0489 0 25.8107 0C11.5725 0 -0.000488281 11.2093 -0.000488281 25ZM30.4509 15.6105C30.0908 15.2616 29.6346 15.0988 29.1784 15.0988C28.7222 15.0988 28.266 15.2616 27.9058 15.6105L19.4301 23.8198C18.7338 24.4942 18.7338 25.6105 19.4301 26.2849L27.9058 34.4942C28.6021 35.1686 29.7546 35.1686 30.4509 34.4942C31.1472 33.8198 31.1472 32.7035 30.4509 32.0291L23.2478 25.0523L30.4509 18.0756C31.1472 17.4012 31.1472 16.2849 30.4509 15.6105Z" fill="white"/>\n' +
+        '  </svg></div>',
+});
+
 
 
 $(".team_items-slider").slick({

@@ -1804,6 +1804,68 @@ a {
     color: #161414;
     margin-top: 130px;
 }
+
+.iventCases .container {
+    padding: 0 60px 120px;
+    position: relative;
+}
+.iventCases_bg {
+    position: absolute;
+    right: 60px;
+    top: -270px;
+}
+.iventCases_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.iventCases_item {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+.iventCases_item:last-child {
+    margin-bottom: 0;
+}
+.iventCases_item-images-box {
+    position: relative;
+}
+.iventCases_item-images {
+    width: 460px;
+    position: relative;
+}
+.iventCases_item-bg {
+    position: absolute;
+    top: 420px;
+}
+.arrow-next {
+    position: absolute;
+    bottom: -29px;
+    right: 14px;
+    z-index: 12;
+    cursor: pointer;
+}
+.arrow-prev {
+    position: absolute;
+    bottom: -29px;
+    left: 14px;
+    z-index: 12;
+    cursor: pointer;
+}
+.cases_item-info-title-mob {
+    display: none;
+}
+.iventCases_item-box.none {
+    display: none;
+}
+#iventsCases_btn.none {
+    display: none;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1964,6 +2026,35 @@ a {
 
     .websitesResult_items {
         gap: 40px;
+    }
+
+    .iventCases_item-images {
+        width: 320px;
+    }
+    .iventCases_item-image {
+        width: 320px;
+    }
+    .iventCases_item-image img{
+        width: 100%;
+    }
+    .iventCases_item-bg {
+        width: 320px;
+        top: 290px;
+    }
+    .iventCases_item-bg img {
+        width: 100%;
+    }
+    .iventCases_item-images svg {
+        width: 30px;
+        height: 30px;
+    }
+    .arrow-next {
+        right: 13px;
+        bottom: -17px;
+    }
+    .arrow-prev {
+        left: 13px;
+        bottom: -17px;
     }
 }
 /* 901px - 1023px */
@@ -2161,6 +2252,19 @@ a {
         margin: -40px auto 40px;
     }
     #portfolio_btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 0;
+        background-color: transparent;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        color: #000;
+        margin: 40px auto 0;
+    }
+    #iventsCases_btn {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -2413,6 +2517,13 @@ a {
     .iventsBanner_text {
         margin-top: 0;
     }
+
+    .iventCases .container {
+        padding: 0 20px 100px;
+    }
+    .iventCases_bg {
+        display: none;
+    }
 }
 /* 481px - 900px */
 @media screen and (max-width: 900px) {
@@ -2639,6 +2750,30 @@ a {
     }
     .websitesResult_item-text {
         max-width: 100%;
+    }
+
+    .iventCases_item {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .iventCases_item-box {
+        margin-bottom: 40px;
+    }
+    .cases_item-info-title-mob {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        color: #161414;
+        margin-bottom: 20px;
+    }
+    .iventCases_item {
+        gap: 30px;
+    }
+    .iventCases_item-images-box {
+        width: fit-content;
+        margin: 0 auto;
     }
 }
 /* 320px - 480px */
@@ -3398,5 +3533,10 @@ a {
         font-size: 16px;
         line-height: 187%;
         margin-top: 100px;
+    }
+
+    .iventCases_title {
+        font-size: 16px;
+        margin-bottom: 40px;
     }
 }
