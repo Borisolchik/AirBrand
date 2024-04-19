@@ -64,7 +64,7 @@ a {
     font-weight: 500;
 }
 .header_action {
-    background-image: url("../images/order_bg_2x.png");
+    background-image: url("../images/order_bg_2x.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -927,7 +927,7 @@ a {
     margin-left: 100px;
 }
 .footer_contacts-action {
-    background-image: url("../images/footer_btn_2x.png");
+    background-image: url("../images/footer_btn_2x.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1866,6 +1866,84 @@ a {
 #iventsCases_btn.none {
     display: none;
 }
+
+.contacts .container {
+    padding: 100px 181px 160px 60px;
+    position: relative;
+}
+.contacts_bg {
+    position: absolute;
+    top: 163px;
+    right: 0;
+    z-index: -1;
+}
+.contacts_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 208%;
+    letter-spacing: 0.1em;
+    color: #161414;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacts_items {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts_right {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #161414;
+}
+.contact_phone {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.contact_mail {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.contact_link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.contact_text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 167%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #161414;
+}
+.contacts_action {
+    background-image: url("../images/contact_bg_btn.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    padding: 10px 10px 10px 29px;
+    transition: 0.4s;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.contacts_action:hover {
+    background-image: url("../images/contact_bg_hover_btn.svg");
+    gap: 17px;
+    padding: 10px 10px 10px 29px;
+    margin-left: 22px;
+    margin-right: 23px;
+}
 /* 1200px - 1439px */
 @media screen and (max-width: 1439px) {
     .banner_title {
@@ -1948,6 +2026,9 @@ a {
 
     .websitesBanner_title {
         line-height: 155%;
+    }
+    .contacts .container {
+        padding: 100px 60px 160px 60px;
     }
 }
 /* 1024px - 1199px */
@@ -2055,6 +2136,10 @@ a {
     .arrow-prev {
         left: 13px;
         bottom: -17px;
+    }
+
+    .contacts_items {
+        gap: 40px;
     }
 }
 /* 901px - 1023px */
@@ -2181,7 +2266,7 @@ a {
         background: #fff;
     }
     .header_action_mob {
-        background-image: url("../images/order_bg_2x.png");
+        background-image: url("../images/order_bg_2x.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -2524,6 +2609,14 @@ a {
     .iventCases_bg {
         display: none;
     }
+
+    .contacts .container {
+        padding: 80px 20px 140px;
+    }
+    .contacts_items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 /* 481px - 900px */
 @media screen and (max-width: 900px) {
@@ -2774,6 +2867,15 @@ a {
     .iventCases_item-images-box {
         width: fit-content;
         margin: 0 auto;
+    }
+
+    .contacts_bg {
+        max-width: 320px;
+        bottom: 127px;
+        top: inherit;
+    }
+    .contacts_bg img{
+        width: 100%;
     }
 }
 /* 320px - 480px */
@@ -3101,7 +3203,7 @@ a {
         background-image: url("../images/footer_menu_mob_2x.png");
     }
     .footer_menu ul li {
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
     .footer_menu1 {
         margin-left: 43px;
@@ -3538,5 +3640,49 @@ a {
     .iventCases_title {
         font-size: 16px;
         margin-bottom: 40px;
+    }
+
+    .contacts_title {
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+    }
+    .contact_phone {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .contacts svg {
+        width: 30px;
+        height: 30px;
+    }
+    .contact_text {
+        font-size: 14px;
+        line-height: 214%;
+        letter-spacing: 0.1em;
+    }
+    .contact_mail {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .contact_link {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .contacts_action {
+        padding: 10px 8px 10px 20px;
+        gap: 31px;
+    }
+    .contacts  .contacts_action svg {
+        width: 24px;
+        height: 24px;
+    }
+    .contacts_items {
+        gap: 60px;
+    }
+    .contacts_right {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.1em;
     }
 }
